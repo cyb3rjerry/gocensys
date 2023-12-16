@@ -20,11 +20,11 @@ GoCensys is a simple wrapper in Go for the v2 API exposed by Censys
   - [ ] /bulk
   - [ ] /search
   - [ ] /aggregate
-- [ ] /v2/metadata/hosts
+- [x] /v2/metadata/hosts
 
 ### Utils
 - [ ] getBaseUrl
 - [ ] validateToken
-- [ ] makeRequest
-- [ ] parseResponse
-- [ ] baseResponse (struct)
+- [x] makeRequest
+- [x] parseResponse
+- [x] baseResponse (struct)
