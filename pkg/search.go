@@ -6,12 +6,12 @@ import (
 )
 
 type HostSearchQuery struct {
-	Query       string   `json:"query"`
-	VirtualHost string   `json:"virtual_hosts,omitempty"`
-	Sort        string   `json:"sort"`
-	Cursor      string   `json:"cursor"`
-	Fields      []string `json:"fields"`
-	PerPage     int      `json:"per_page"`
+	Query       string
+	VirtualHost string
+	Sort        string
+	Cursor      string
+	Fields      []string
+	PerPage     int
 }
 
 type SearchResponse struct {
@@ -88,10 +88,10 @@ type AutonomousSystem struct {
 }
 
 type CertSearchQuery struct {
-	Query   string   `json:"query,omitempty"`
-	Sort    []string `json:"sort,omitempty"`
-	Cursor  string   `json:"cursor,omitempty"`
-	PerPage int      `json:"per_page,omitempty"`
+	Query   string
+	Sort    []string
+	Cursor  string
+	PerPage int
 }
 
 func (c *Client) NewHostSearchQuery() *HostSearchQuery {
