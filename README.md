@@ -6,7 +6,7 @@ GoCensys is a simple wrapper in Go for the v2 API exposed by Censys
 
 ### APIs
 - [ ] /v2/hosts
-  - [ ] /search
+  - [x] /search
   - [ ] /aggregate
   - [ ] /{ip}
     - [ ] /diff
@@ -18,7 +18,7 @@ GoCensys is a simple wrapper in Go for the v2 API exposed by Censys
     - [ ] /hosts
     - [ ] /comments
   - [ ] /bulk
-  - [ ] /search
+  - [x] /search
   - [ ] /aggregate
 - [x] /v2/metadata/hosts
 
