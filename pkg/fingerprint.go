@@ -100,17 +100,17 @@ type ParsedCert struct {
 	Redacted        bool   `json:"redacted"`
 }
 
-type BulkCertQuery struct {
+type CertQuery struct {
 	Fingerprints []string
 }
 
-func (c *Client) NewBulkCertQuery(certs []string) *BulkCertQuery {
-	return &BulkCertQuery{
+func (c *Client) NewCertQuery(certs []string) *CertQuery {
+	return &CertQuery{
 		Fingerprints: certs,
 	}
 }
 
-func (c *Client) DoBulkCertQuery(query *BulkCertQuery) ([]BulkCert, error) {
+func (c *Client) DoCertQuery(query *CertQuery) ([]BulkCert, error) {
 	resp := baseResponse{
 		Results: &[]BulkCert{},
 	}
